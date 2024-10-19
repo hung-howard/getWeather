@@ -1,0 +1,232 @@
+:root {
+  font-family: "Nunito", sans-serif;
+  --main-color: #0858b5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #4f93e1, #0858b5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.main__container {
+  background-color: #fff;
+  width: 48rem;
+  height: 11rem;
+  border-radius: 3.2rem;
+  padding: 3.2rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+
+  @media screen and (max-width: 30em) {
+    width: 40rem;
+    height: 10rem;
+    border-radius: 2.4rem;
+    padding: 2.4rem;
+    margin: 0 1.6rem;
+  }
+}
+
+.search__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon__logo.fa-solid.fa-cloud {
+  color: var(--main-color);
+  font-size: 3.2rem;
+  margin-right: 1.6rem;
+
+  @media screen and (max-width: 30em) {
+    font-size: 2.4rem;
+  }
+}
+
+input {
+  width: 64%;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #f8f9fa;
+  transition: all 0.4s;
+
+  @media screen and (max-width: 30em) {
+    width: 56%;
+  }
+}
+input::placeholder {
+  color: #ced4da;
+  text-transform: uppercase;
+}
+
+input:focus {
+  color: #041222;
+  outline: none;
+  width: 72%;
+  background-color: #f3f4f5;
+  font-weight: 600;
+  font-size: 1.6rem;
+
+  letter-spacing: 0.1rem;
+}
+
+.btn__search {
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  height: 4.8rem;
+  width: 4.8rem;
+  border: none;
+  margin-left: 1.6rem;
+  font-size: 2.4rem;
+  color: var(--main-color);
+  transition: all 0.4s;
+
+  @media screen and (max-width: 30em) {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.btn__search:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.information__container {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  scale: 0;
+}
+
+.detail__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin-top: 1.6rem;
+}
+
+.weather-condition {
+  letter-spacing: 0.2rem;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+
+.city-name {
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.cityWeather {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.icon__text-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  @media screen and (max-width: 30em) {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.wind.fa-solid.fa-wind {
+  color: var(--main-color);
+  font-size: 2.4rem;
+  height: 2.4rem;
+}
+
+.temperatur.fa-solid.fa-wind.fa-solid.fa-temperature-low {
+  color: var(--main-color);
+  font-size: 2.4rem;
+  height: 2.4rem;
+}
+
+.water.fa-solid.fa-water {
+  color: var(--main-color);
+  font-size: 2.4rem;
+  height: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #282f38;
+}
+
+.fade-In {
+  animation: fadeIn 0.8s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.img__erro {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.erro__imgContainer {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #e22c3e;
+}
