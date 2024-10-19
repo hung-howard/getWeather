@@ -35,6 +35,7 @@ html {
   @media screen and (max-width: 30em) {
     width: 48rem;
     margin: 0 0.8rem;
+    padding: 3.2rem 1.6rem;
   }
 }
 
@@ -83,6 +84,10 @@ input:focus {
   font-weight: 600;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
+
+  @media screen and (max-width: 30em) {
+    width: 70%;
+  }
 }
 
 .btn__search {
@@ -100,8 +105,8 @@ input:focus {
   align-items: center;
 
   @media screen and (max-width: 30em) {
-    height: 4rem;
-    width: 4rem;
+    height: 4.2rem;
+    width: 4.2rem;
     font-size: 1.6rem;
   }
 }
@@ -165,6 +170,7 @@ input:focus {
 .icon__text-content {
   width: 8rem;
   height: 8rem;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,16 +184,25 @@ input:focus {
 .wind.fa-solid.fa-wind {
   color: var(--main-color);
   font-size: 2.4rem;
+  @media screen and (max-width: 30em) {
+    font-size: 1.8rem;
+  }
 }
 
 .temperatur.fa-solid.fa-wind.fa-solid.fa-temperature-low {
   color: var(--main-color);
   font-size: 2.4rem;
+  @media screen and (max-width: 30em) {
+    font-size: 1.8rem;
+  }
 }
 
 .water.fa-solid.fa-water {
   color: var(--main-color);
   font-size: 2.4rem;
+  @media screen and (max-width: 30em) {
+    font-size: 1.8rem;
+  }
 }
 
 h3 {
@@ -197,6 +212,7 @@ h3 {
 
   @media screen and (max-width: 30em) {
     line-height: 0;
+    font-size: 1.4rem;
   }
 }
 
