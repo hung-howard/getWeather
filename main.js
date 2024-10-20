@@ -15,6 +15,8 @@ const getGeocode = async function (cityName) {
     const response = await fetch(url);
     const data = await response.json();
 
+    console.log(data);
+
     if (data.length > 0) {
       return {
         lat: data[0].lat,
